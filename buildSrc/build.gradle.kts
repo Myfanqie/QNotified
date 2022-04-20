@@ -25,6 +25,10 @@ plugins {
 }
 
 repositories {
+    maven {
+        setUrl("http://maven.aliyun.com/nexus/content/groups/public/")
+        setAllowInsecureProtocol(true)
+    }
     google()
     gradlePluginPortal()
     mavenCentral()
